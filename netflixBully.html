@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+ <title>Netflix Bully</title>
+    <style>
+      body {
+        font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+        font-size: 100%;
+      }
+      #status {
+        /* avoid an excessively wide status text */
+        white-space: pre;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        max-width: 700px;
+      }
+    </style>
+
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
+     -->
+    <script src="netflixBully.js"></script>
+</head>
+	<body>
+		<!--<form id="alarmStart">
+		Start time: <input type="time" name="startTime" value=""><br>
+		</form>-->
+		<!--<p>Set a timer closing netflix</p>-->
+		<form id="alarmEnd">
+		I want to stop watching netflix aaat...: <input type="time" name="endTime"><br>
+		<!--<input type="number" name="Hour" min="0" max="23" placeholder="00">
+  		<input type="number" name="Minute" min="0" max="59" placeholder="00">-->
+		</form>
+		<p>Repeat alarm?</p>
+		<form id="repeatAlarm">
+		<input type="radio" name="repeat" value="yes">Yes<br>
+		<input type="radio" name="repeat" value="no">No
+		</form>
+		<!--<input type="submit" name="submit" value="Save Productivity" onclick="helloWorld()">-->
+		<button id="saveP">Save Productivity</button>
+		<!--
+		<a href="" id="alarmOn">ON</a>
+		<a href="" id="alarmOff">OFF</a>
+		-->
+	</body>
+</html>

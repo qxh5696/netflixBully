@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+
+  "name": "Netflix Bully",
+  "description": "This extension tries to save productivity by closing the netflix tab open in chrome",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "netflixBully.html"
+  },
+  "permissions": [
+    "tabs",
+    "alarms"
+  ]
+
+}
